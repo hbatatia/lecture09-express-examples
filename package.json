@@ -5,7 +5,9 @@
     "main": "index.js",
     "scripts": {
         "dev": "node app.js",
-        "serv": "nodemon app7-http.js"
+        "serv": "nodemon app1-nodemon.js",
+        "expr": "nodemon app2-express.js",
+        "game": "nodemon app3-game.js"
     },
     "repository": {
         "type": "git",
