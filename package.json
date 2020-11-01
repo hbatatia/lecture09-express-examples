@@ -8,7 +8,8 @@
         "serv": "nodemon app1-nodemon.js",
         "expr": "nodemon app2-express.js",
         "game": "nodemon app3-game.js",
-        "routes": "nodemon app4-routes.js"
+        "routes": "nodemon app4-routes.js",
+        "morg": "nodemon app5-morgan.js"
     },
     "repository": {
         "type": "git",
