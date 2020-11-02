@@ -2,8 +2,13 @@ const express = require('express');
 const app = express();
 const port = 5000;
 
-const postRoutes = require('./routes/post')
-    //create a route for /
+const morgan = require("morgan");
+
+//use morgan middleware
+app.use(morgan('dev'));
+
+const postRoutes = require('./routes/post');
+//create a route for /
 app.get('/', postRoutes.getHello);
 //create a route for /players
 app.get('/api/players', postRoutes.getPlayerList);
