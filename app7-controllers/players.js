@@ -6,11 +6,9 @@ class Player {
     }
 }
 
-
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
-
 
 function selectPlayers(req) {
     var players = [];
@@ -23,7 +21,6 @@ function selectPlayers(req) {
     }
     req.session.players = players;
 }
-
 
 function listPlayers(req) {
 
@@ -43,7 +40,6 @@ function getPlayer(req, id) {
     }
     return null;
 }
-
 module.exports = {
     listPlayers,
     getPlayer
