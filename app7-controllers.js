@@ -2,7 +2,6 @@ const express = require('express');
 var session = require('express-session');
 const app = express();
 
-
 //define a session
 app.use(session({
     secret: 'keyboard cat',
@@ -11,11 +10,12 @@ app.use(session({
     saveUninitialized: false
 }));
 
-const postRoutes = require('./app7-routes/post');
-//pass requeststo the router middleware
-app.use('/', postRoutes.getHello);
-app.use('/api/players', postRoutes.getPlayerList);
-app.use('/api/players/:id', postRoutes.getPlayerByID);
+//pass requests to the router middleware
+const router = require('./app7-routes/post');
+app.use('/', router);
+app.use('/api/players', router);
+app.use('/api/players/:id', router);
+console.log("Out controllers");
 
 //make the app listen on port
 const port = process.env.PORT || 3000;
