@@ -2,6 +2,10 @@ const express = require('express');
 var session = require('express-session');
 const app = express();
 
+//use morgan middleware
+const morgan = require("morgan");
+app.use(morgan('dev'));
+
 //define a session
 app.use(session({
     secret: 'keyboard cat',

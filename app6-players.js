@@ -16,7 +16,7 @@ function selectPlayers(req) {
     var players = [];
     for (let i = 0; i < 10; i++) {
         //create names and scores randomly
-        let id = 1 + getRandomInt(10);
+        let id = i;
         let name = "Player" + id;
         let score = getRandomInt(1000);
         players[i] = new Player(id, name, score);
