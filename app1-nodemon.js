@@ -1,6 +1,5 @@
 //load hhtp module
 const http = require('http');
-
 //create a HTTP server
 // a server is an object that extendeds EventEmitter!
 //we can therefore register an event handler

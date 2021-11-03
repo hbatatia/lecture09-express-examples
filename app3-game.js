@@ -3,12 +3,12 @@ const express = require('express');
 const app = express();
 //the server has now been created!
 
-
-app.use(express.static('app3-game'));
+//using static to send static files 
+app.use(express.static('app3-content'));
 
 //create a route to gamee
 app.get('/game', (req, res) => {
-    res.sendFile('app3-game/index.html', { root: __dirname });
+    res.sendFile('app3-content/index.html', { root: __dirname });
 });
 
 //read the environment variable PORT, if it is not set consider 3000

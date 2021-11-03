@@ -11,7 +11,7 @@ app.use(session({
     saveUninitialized: false
 }));
 
-const postRoutes = require('./app6-routes/post');
+const postRoutes = require('./app6-business_layer/routes');
 //create a route for /
 app.get('/', postRoutes.getHello);
 //create a route for /players

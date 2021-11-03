@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const postRoutes = require('./app5-routes/post')
+const postRoutes = require('./app5-business_layer/routes')
     //create a route for /
 app.get('/', postRoutes.getHello);
 //create a route for /players

@@ -10,7 +10,7 @@
         "apis": "nodemon app4-apis.js",
         "routes": "nodemon app5-routes.js",
         "params": "nodemon app6-params.js",
-        "contl": "nodemon app7-controllers.js",
+        "contrl": "nodemon app7-controllers.js",
         "morg": "nodemon app8-morgan.js"
     },
     "repository": {

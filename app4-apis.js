@@ -10,7 +10,7 @@ app.get('/', (request, response) => {
 });
 //create a route for /players
 app.get('/api/players', (request, response) => {
-    const getPlayers = require('./app5-players');
+    const getPlayers = require('./app4-business_layer/player_manager');
     let players = getPlayers();
     response.write(JSON.stringify(players));
     response.end();

@@ -3,7 +3,7 @@ const getHello = (request, response) => {
     response.end();
 };
 
-const { listPlayers, getPlayer } = require('../app7-controllers/players');
+const { listPlayers, getPlayer } = require('./player_model_services');
 
 const getPlayerList = (request, response) => {
     let players = listPlayers(request);

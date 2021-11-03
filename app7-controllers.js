@@ -11,7 +11,7 @@ app.use(session({
 }));
 
 //pass requests to the router middleware
-const router = require('./app7-routes/post');
+const router = require('./app7-business_layer/router');
 app.use('/', router);
 app.use('/api/players', router);
 app.use('/api/players/:id', router);

@@ -4,7 +4,7 @@ const getHello = (request, response) => {
 };
 
 const getPlayerList = (request, response) => {
-    const getPlayers = require('../app5-players');
+    const getPlayers = require('./player_manager');
     let players = getPlayers();
     response.write(JSON.stringify(players));
     response.end();
